@@ -2,7 +2,7 @@
 
 ## Agenda
 
-## UHB: openEHR Training Session One 11-Nov-2020
+## East Accord: openEHR Training Session One 08-Dec-2020
 
 | Topic                                    | Dtn. | Start | End   |
 | ---------------------------------------- | ---- | ----- | ----- |
@@ -140,6 +140,18 @@ We will cover the Technical aspects in more depth in the next training event.
 
 https://freshehr.github.io/dhi-proms/
 
+
+## Download Postman artefacts
+
+[![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/7643fba2c3a2034777e4#?env%5Bdhi-scotland%5D=W3sia2V5IjoiZWhyc2NhcGVCYXNlVXJsIiwidmFsdWUiOiJodHRwczovL2Nkci5jb2RlNGhlYWx0aC5vcmcvcmVzdC92MSIsImVuYWJsZWQiOnRydWV9LHsia2V5Ijoib3BlbmVockJhc2VVcmwiLCJ2YWx1ZSI6Imh0dHBzOi8vY2RyLmNvZGU0aGVhbHRoLm9yZy9yZXN0L29wZW5laHIvdjEiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6Im9wZW5FaHJFeHBsb3JlciIsInZhbHVlIjoiaHR0cHM6Ly9leHBsb3Jlci5jb2RlNGhlYWx0aC5vcmcvZXhwbG9yZXIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6IkNEUk5hbWUiLCJ2YWx1ZSI6ImVocnNjYXBlLmNvbSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiZG9tYWluU3VmZml4IiwidmFsdWUiOiJjb2RlNGhlYWx0aC5vcmciLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6IlNlc3Npb25IZWFkZXIiLCJ2YWx1ZSI6IkVoci1TZXNzaW9uLWRpc2FibGVkIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJVc2VybmFtZSIsInZhbHVlIjoiYTgxZjQ3YzYtYTc1Ny00ZTM0LWI2NDQtM2NjYzYyYjRhMDFjIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJQYXNzd29yZCIsInZhbHVlIjoiJDJhJDEwJDYxOWtpIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJBdXRob3JpemF0aW9uIiwidmFsdWUiOiJCYXNpYyBZVGd4WmpRM1l6WXRZVGMxTnkwMFpUTTBMV0kyTkRRdE0yTmpZell5WWpSaE1ERmpPaVF5WVNReE1DUTJNVGxyYVE9PSIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiYWNjb3VudE5hbWUiLCJ2YWx1ZSI6ImRoaS1zY290bGFuZCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoiY29tbWl0dGVyTmFtZSIsInZhbHVlIjoiRHIgQ2hhbCIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoicGF0aWVudE5hbWUiLCJ2YWx1ZSI6Ikl2b3IgQ294IiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJzdWJqZWN0SWQiLCJ2YWx1ZSI6Ijk5OTk5OTkwMDAiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6Im5oc051bWJlciIsInZhbHVlIjoiOTk5OTk5OTAwMCIsImVuYWJsZWQiOnRydWV9LHsia2V5Ijoic3ViamVjdE5hbWVzcGFjZSIsInZhbHVlIjoidWsubmhzLm5oc19udW1iZXIiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImVocklkIiwidmFsdWUiOiIzZTY3NDczOS05NTBjLTRiOGEtOTc2Yi01YWVmMjFjNjE4YzUiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6InBhcnR5SWQiLCJ2YWx1ZSI6IjQwOTUwMyIsImVuYWJsZWQiOnRydWV9LHsia2V5IjoidGVtcGxhdGVJZCIsInZhbHVlIjoiRm9vdF9hbmRfQW5rbGVfUFJPTXMtdjAiLCJlbmFibGVkIjp0cnVlfSx7ImtleSI6ImNvbXBvc2l0aW9uSWQiLCJ2YWx1ZSI6IjA5NWFkYzg3LTcxY2MtNDFlMS1hYTQ2LWFmOWQ3MmY4ZGRmNjo6YTgxZjQ3YzYtYTc1Ny00ZTM0LWI2NDQtM2NjYzYyYjRhMDFjOjoxIiwiZW5hYmxlZCI6dHJ1ZX1d)
+
+ehrscapeBaseUrl: https://cdr.code4health.org/rest/v1
+
+openehrBaseUrl: https://cdr.code4health.org/rest/openehr/v1
+
+https://cdr.code4health.org/studio
+
+
 ### Further reading
 
 #### General Information:
@@ -150,7 +162,10 @@ openEHR videos and presentations: https://www.youtube.com/c/openehr/featured
 
 openEHR Discourse (discussion forum): https://discourse.openehr.org/
 
+What is an open platform? - https://inidus.com/what-is-an-open-platform/
+
 What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr
+
 
 openEHR Zotero library: https://www.zotero.org/libraries
 

@@ -29,7 +29,7 @@
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
 
-4. Choose the repository allocated to you – Aberdeen or Dundee
+4. Choose the repository allocated to you – Aberdeen, Dundee or Inverness
 
 5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
 
