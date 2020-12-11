@@ -1,22 +1,19 @@
-# openEHR modelling workshop Session 1
+# openEHR workshop Session 2
 
 ## Agenda
 
-## East Accord: openEHR Training Session One 08-Dec-2020
-
+## East Accord: openEHR Training Session Two 15th December 2020
 | Topic                                    | Dtn. | Start | End   |
 | ---------------------------------------- | ---- | ----- | ----- |
-| Intro			 ?                         | 10   | 09:00 | 09:10 |
-| What is openEHR?                         | 45   | 09:10 | 09:55 |
-| Break                                    | 10   | 09:55 | 10:05 |
-| Introduction  to Archetype and Templates | 45   | 10:05 | 10:50 |
-| Break                                    | 10   | 10:50 | 11:00 |
-| Build an  openEHR app demo               | 45   | 11:00 | 11:45 |
-| Break                                    | 5    | 11:45 | 11:50 |
-| Practical  modelling                     | 45   | 11:50 | 12:35 |
-| Break                                    | 5    | 12:35 | 12:40 |
-| Tech  intro/ wash-up                     | 20   | 12:40 | 13:00 |
-
+| Introduction to openEHR Reference model  | 45   | 09:00 | 09:45 |
+| Break                                    | 10   | 09:45 | 09:55 |
+| Modelling example                        | 45   | 09:55 | 10:40 |
+| Break                                    | 10   | 10:40 | 10:50 |
+| Modelling governance 		               | 45   | 10:50 | 11:35 |
+| Break                                    | 10   | 11:35 | 11:45 |
+| Working with the API                     | 45   | 11:45 | 12:30 |
+| Break                                    | 5    | 12:30 | 12:35 |
+| Questions/ issues		 		           | 15   | 12:35 | 12:50 |
 
 ## Practical session - Getting started
 
@@ -29,110 +26,14 @@
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
 
-4. Choose the repository allocated to you – Aberdeen or Dundee
 
-5. Find ‘Nursing Admission Assessment STARTER.v0' in the list of templates. This will open the template.
+### Technical Intro
 
-6. Open the original ['Nursing Admission Assessment paper form'](Nursing%20Admission%20Assessment.pdf) (Best if you open this link in a new tab). 
+You may find this document helpful as a follow-up to the brief Technical Intro.
+We will cover the Technical aspects in more depth in the next training event.
 
+https://freshehr.github.io/dhi-proms/
 
-## A. Tidy the basic template
-
-### Problem/Diagnosis	
-
- - Rename the Problem/Diagnosis archetype to 'Main Diagnosis'
-
-- Constrain out everything apart from 'Problem/Diagnosis name'
-
-### Adverse Reaction Risk
-
-- Pull in the 'Adverse Reaction Risk' archetype
-
-- Set it's occurrences to 0..* to allow multiple allergies to be recorded.
-  
-- Constrain out everything apart from 'Substance' and 'Manifestation'
-
-- Rename ‘Manifestation’ to ‘Reaction Details’ and make it mandatory
-
-### Medication Order
-
-- Clone 'Specific direction description'
-
-- Rename one to 'Dose' and the other to 'Frequency'
-
-### Vital Signs section
-
- - Pull in Pulse Oximetry into Vital Signs section
-
-- Constrain out everything apart from 'SpO2' ratio
-
-- Make 'systolic' and 'diastolic' Blood pressure mandatory
-
-
-### Add a Clinical Frailty scale
-
-Go to the International CKM 
-
-[https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export](https://ckm.openehr.org/ckm/archetypes/1013.1.4691/export)
-
- (Best if you open this link in a new tab).
-
-- Press the ‘Export ADL’ button and save the archetype somewhere on your system
-
-- Go back into Archetype Designer and go to top-menu->‘Import’ then either Browse to your file or drag and drop then Upload.
-
-- Go back to your template, click on ‘content’, then pull in the Clinical Frailty scale from the list of archetypes on the right.
-
-## B. Create a new local archetype - Additional information on admission
-
-The nurses have used the templates you created but have asked for some changes.
-
-You can view the original document here  
-
-['Additional Information on Admission'](Additional%20information%20on%20admission.pdf) (Best if you open this link in a new tab).
-
-
-- Create a new ADMIN_ENTRY archetype called ‘Inpatient admission details’ then add these ‘element’ datapoints ...
-
-**Mode of access**	
-
-			Ambulatory  	
-
-			Wheelchair	
-
-			Stretcher	
-
-			Other		_________________________________
-
-**Transported with	Oxygen**	
-
-			Monitor	
-
-			IV		
-
-			Other		_________________________________
-
-**Admission method	Waiting list**		
-
-			Booked		
-
-			Planned		
-
-			A&E department	
-
-			General Practitioner	
-
-			Bed Bureau	
-
-				Consultant Clinic	
-
-			Other			____________________________		
-
-**Additional Help needed**	
-
-		Yes  	     No  
-
-Once you have created your new archetype, go back to your template. Highlight ‘content’ and add your new archetype then Save it.
 
 ## Download Postman artefacts
 
@@ -145,6 +46,38 @@ openehrBaseUrl: https://cdr.code4health.org/rest/openehr/v1
 https://cdr.code4health.org/studio
 
 
+
+## A. List templates and upload a new template
+
+https://freshehr.github.io/dhi-proms/cdr/ehrscape/ECDR2-openehr-templates/
+
+## B. Create new EHR - register a patient with the CDR
+
+https://freshehr.github.io/jmohw-cdr/opencdr/OCDR5-creating-an-ehr/
+
+## C. Retrieve the patient's ehrId from their subjectID (NHS Number)
+
+https://freshehr.github.io/dhi-proms/cdr/ehrscape/ECDR5-retrieving-an-ehrId/
+
+## D. Get an example template
+
+```bash
+curl --location --request GET 'https://cdr.code4health.org/rest/v1/template/JMOHW - Passport observations.v0/example?format=FLAT&exampleFilter=OUTPUT' \
+--header 'Content-Type: application/json' \
+--header 'Authorization: {{Authorization}}'
+```
+## E. Commit a composition
+
+https://freshehr.github.io/dhi-proms/dhis/DHIS6-committing-proms-data/
+
+## F. Update a composition
+
+https://freshehr.github.io/dhi-proms/dhis/DHIS8-updating-proms-data/
+
+## G. Run a query
+
+https://freshehr.github.io/dhi-proms/dhis/DHIS5-querying-proms-data/
+
 ### Further reading
 
 #### General Information:
@@ -155,10 +88,7 @@ openEHR videos and presentations: https://www.youtube.com/c/openehr/featured
 
 openEHR Discourse (discussion forum): https://discourse.openehr.org/
 
-What is an open platform? - https://inidus.com/what-is-an-open-platform/
-
 What is openEHR? - Introduction: https://www.openehr.org/about/what_is_openehr
-
 
 openEHR Zotero library: https://www.zotero.org/libraries
 
