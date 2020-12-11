@@ -1,20 +1,19 @@
-# openEHR modelling practical
+# openEHR workshop Session 2
 
 ## Agenda
 
-## UHB: openEHR Training Session Two 18-Nov-2020
-
+## East Accord: openEHR Training Session Two 15th December 2020
 | Topic                                    | Dtn. | Start | End   |
 | ---------------------------------------- | ---- | ----- | ----- |
 | Introduction to openEHR Reference model  | 45   | 09:00 | 09:45 |
 | Break                                    | 10   | 09:45 | 09:55 |
-| Modelling example - Somerset dataset     | 45   | 09:55 | 10:40 |
+| Modelling example                        | 45   | 09:55 | 10:40 |
 | Break                                    | 10   | 10:40 | 10:50 |
-| Working with the API		               | 45   | 10:50 | 11:35 |
+| Modelling governance 		                | 45   | 10:50 | 11:35 |
 | Break                                    | 10   | 11:35 | 11:45 |
-| API continued	+ AQL	                   | 45   | 11:45 | 12:30 |
+| Working with the API                     | 45   | 11:45 | 12:30 |
 | Break                                    | 5    | 12:30 | 12:35 |
-| Questions/ issues				           | 15   | 12:35 | 12:50 |
+| Questions/ issues		 		             | 15   | 12:35 | 12:50 |
 
 ## Practical session - Getting started
 
@@ -26,14 +25,6 @@
 
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
-
-4. Choose the repository allocated to you – Aberdeen or Dundee
-
-5. Open the [Somerset dataset mindmap](other/WMCN%20MDT.pdf) (best done in a new window) 
-
-Have a look at each part of the dataset and think whether these might be INSTRUCTIONS, ACTIONS, OBSERVATIONS etc. - refer to your repository or CKM (openehr.ckm.org for possible examples).
-
-6. Once you have an idea of roughly what kind of information is in there, have a go at creating new templates one for the Referral and for the Case/Pathway.
 
 
 ### Technical Intro

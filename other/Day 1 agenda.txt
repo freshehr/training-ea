@@ -1,4 +1,4 @@
-# openEHR modelling workshop Session 1
+# openEHR workshop Session 1
 
 ## Agenda
 
