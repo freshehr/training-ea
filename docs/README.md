@@ -1,21 +1,35 @@
-# openEHR workshop Session 2
+# 15th Dec 09:00 openEHR workshop Session 2
 
 ## Agenda
 
 ## East Accord: openEHR Training Session Two 15th December 2020
 | Topic                                    | Dtn. | Start | End   |
 | ---------------------------------------- | ---- | ----- | ----- |
-| Introduction to openEHR Reference model  | 45   | 09:00 | 09:45 |
+| openEHR Archetype classes                | 45   | 09:00 | 09:45 |
 | Break                                    | 10   | 09:45 | 09:55 |
-| Modelling example                        | 45   | 09:55 | 10:40 |
+| Mindmap modelling smoking breakout       | 45   | 09:55 | 10:40 |
 | Break                                    | 10   | 10:40 | 10:50 |
-| Modelling governance 		               | 45   | 10:50 | 11:35 |
-| Break                                    | 10   | 11:35 | 11:45 |
-| Working with the API                     | 45   | 11:45 | 12:30 |
-| Break                                    | 5    | 12:30 | 12:35 |
-| Questions/ issues		 		           | 15   | 12:35 | 12:50 |
+| Modelling governance 		                | 45   | 10:50 | 11:35 |
+| Break                                    | 5    | 11:35 | 11:40 |
+| Questions/ issues		 		             | 20   | 11:40 | 12:00 |
+| Technical - API / Archetyping Smoking    | 50   | 12:00 | 12:50 |
+| Questions/ issues                        | 10   | 12:50 | 13:00 |
 
-## Practical session - Getting started
+
+## Mindmapping Smoking - Getting started
+
+1. Use any mind-mapping software of your choice - we tend it to use [Xmind](https://www.xmind.net/)
+
+2. As a group, take about 25 minutes to develop a maximal dataset for 'smoking status' 
+
+Use this image as a start point
+
+![](images/smoking_raw.png)
+
+3. Rejoin the main channel and we will compare notes with the other group, and look at examples from the
+
+
+## Modelling Smoking - Getting started
 
 1. Open a web browser – Chrome or Firefox are best
 
@@ -26,7 +40,9 @@
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
 
-
+4. Create a new EVALUATION archetype for 'smoking_status' and see how much of the mindmap you can correctly model.
+   
+   
 ### Technical Intro
 
 You may find this document helpful as a follow-up to the brief Technical Intro.

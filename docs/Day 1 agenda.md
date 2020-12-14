@@ -1,4 +1,4 @@
-# openEHR workshop Session 1
+# Dec 8th openEHR workshop Session 1
 
 ## Agenda
 
