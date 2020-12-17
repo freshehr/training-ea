@@ -26,7 +26,6 @@
 3. Login: 		`freshehr_training`	
    Password: 	`ad4freshtraining`
 
-
 ### Technical Intro
 
 You may find this document helpful as a follow-up to the brief Technical Intro.
